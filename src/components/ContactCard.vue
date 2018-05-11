@@ -48,6 +48,7 @@ export default {
     background-color: #F1F1F1;
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    padding: 8px 8px 0px 8px;
   }
 
   .underline{

@@ -46,7 +46,7 @@ export default {
 
   .sitemap-button{
     width: 98px;
-    height: 48px;
+    height: 52px;
     background: rgba(234, 198, 87, 0.712);
     border-radius: 4px;
     border-color: black;
@@ -55,7 +55,7 @@ export default {
     font-size: inherit;
     color: #000000;
     text-align: center;
-    padding-top: 4px;
+    padding-top: 3px;
   }
 
   @media only screen and (min-width: 150px) {

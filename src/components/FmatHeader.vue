@@ -7,7 +7,7 @@
         <a href="https://intranet.matematicas.uady.mx/enlinea2/"><img src="../assets/enlinea2.png" alt="logo"></a>
         <a href="https://intranet.matematicas.uady.mx/enlinea/"><img src="../assets/enlinea1.png" alt="logo"></a>
       </div>
-      <div class="navbar">
+      <div class="nav">
         <a href="#" class="nav-item"> <h5>¿Quienes Somos?</h5> </a>
         <a href="#" class="nav-item"> <h5>Organización</h5> </a>
         <router-link to="/directorio" class="nav-item"> <h5>Directorio</h5> </router-link>
@@ -57,7 +57,7 @@ export default {
     align-items: center;
   }
 
-  .navbar{
+  .nav{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background: #EAC657;
@@ -103,14 +103,14 @@ export default {
     .logo{
       display: none;
     }
-    .navbar{
+    .nav{
       font-size: 16px;
     }
   }
 
   @media only screen and (min-width: 640px) {
     .nav-item h5{
-      margin-top: 1.56em;
+      margin-top: 0.56em;
     }
     .header{
       top: 144px;
@@ -123,7 +123,7 @@ export default {
     .edu-links{
       justify-self: end;
     }
-    .navbar{
+    .nav{
       font-size: inherit;
     }
   }
