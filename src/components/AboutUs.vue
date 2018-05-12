@@ -6,9 +6,9 @@
       <div class="sidenav">
         <div class="sideblock">
           <h3>¿Quiénes somos?</h3>
-          <a href="#historia">Historia</a><br>
-          <a href="#mision">Misión</a><br>
-          <a href="#vision">Visión</a>
+          <p><a href="#historia">Historia</a></p>
+          <p><a href="#mision">Misión</a></p>
+          <p id="lastSideMenu"><a href="#vision">Visión</a></p>
         </div>
       </div>
 
@@ -91,14 +91,6 @@ export default {
 
 <style lang="css" scoped>
 
-  .body{
-    display: grid;
-  }
-
-  .content{
-    padding: 44px 16px 16px 16px;
-  }
-
   .sidenav {
       justify-self: stretch;
       align-self: stretch;
@@ -107,43 +99,37 @@ export default {
 
   .sideblock {
     width: 228px;
-    position: fixed;
-    /*z-index: 1;*/
-    top: 228px;
+    position: absolute;
+    top: 320px;
     background: #eee;
     overflow-x: hidden;
-    padding: 8px 0;
+    padding-top: 8px;
+  }
+
+  .sideblock h3 {
+    text-align: center;
+  }
+
+  .sideblock p {
+    border: solid;
+    border-width: 1px 0px 0px 0px;
+    background-color: #eee;
+    padding: 20px;
+    margin-bottom: 0;
   }
 
   .sideblock a {
-      padding: 6px 8px 6px 16px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #2196F3;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+  }
+
+  .sideblock #lastSideMenu {
+    border-width: 1px 0px 1px 0px;
   }
 
   .sideblock a:hover {
       color: #064579;
-  }
-
-  @media only screen and (min-width: 150px) {
-    .body{
-      grid-template-columns: 1fr;
-    }
-
-    .sidenav{
-      display: none;
-    }
-  }
-
-  @media only screen and (min-width: 640px) {
-    .body{
-      grid-template-columns: 228px 1fr;
-    }
-
-    .sidenav{
-      display: inherit;
-    }
   }
 
 </style>
