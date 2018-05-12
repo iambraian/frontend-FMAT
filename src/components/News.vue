@@ -8,7 +8,12 @@
         <h1 class="page-header"> <strong>Noticias</strong> </h1>
 
         <div class="news-area">
-          <announcement></announcement>
+          <a href="#"><announcement></announcement></a>
+          <a href="#"><announcement></announcement></a>
+          <a href="#"><announcement></announcement></a>
+          <a href="#"><announcement></announcement></a>
+          <a href="#"><announcement></announcement></a>
+          <a href="#"><announcement></announcement></a>
         </div>
 
       </div>
