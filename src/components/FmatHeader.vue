@@ -8,7 +8,7 @@
         <a href="https://intranet.matematicas.uady.mx/enlinea/"><img src="../assets/enlinea1.png" alt="logo"></a>
       </div>
       <div class="nav">
-        <a href="#" class="nav-item"> <h5>¿Quienes Somos?</h5> </a>
+        <router-link to="/historia" class="nav-item"> <h5>¿Quienes Somos?</h5> </router-link>
         <a href="#" class="nav-item"> <h5>Organización</h5> </a>
         <router-link to="/directorio" class="nav-item"> <h5>Directorio</h5> </router-link>
         <a href="#" class="nav-item"> <h5>Académicos</h5> </a>
