@@ -37,6 +37,10 @@ export default {
     display:grid;
   }
 
+  .internal-body{
+    display: grid;
+  }
+
   .content{
     padding: 44px 16px 16px 16px;
   }
@@ -45,6 +49,47 @@ export default {
     justify-self: stretch;
     align-self: stretch;
     background-color: #0D116E;
+  }
+
+  .sidenav {
+      justify-self: stretch;
+      align-self: stretch;
+      background-color: #0D116E;
+  }
+
+  .sideblock {
+    width: 228px;
+    position: absolute;
+    top: 320px;
+    background: #eee;
+    overflow-x: hidden;
+    padding-top: 8px;
+  }
+
+  .sideblock h3 {
+    text-align: center;
+  }
+
+  .sideblock p {
+    border: solid;
+    border-width: 1px 0px 0px 0px;
+    background-color: #eee;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+
+  .sideblock a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+  }
+
+  .sideblock #lastSideMenu {
+    border-width: 1px 0px 1px 0px;
+  }
+
+  .sideblock a:hover {
+      color: #064579;
   }
 
   .page-header{
@@ -62,7 +107,15 @@ export default {
       grid-template-columns: 1fr;
     }
 
+    .internal-body{
+      grid-template-columns: 1fr;
+    }
+
     .sidebar{
+      display: none;
+    }
+
+    .sidenav{
       display: none;
     }
   }
@@ -77,7 +130,15 @@ export default {
       grid-template-columns: 114px 1fr 114px;
     }
 
+    .internal-body{
+      grid-template-columns: 228px 1fr;
+    }
+
     .sidebar{
+      display: inherit;
+    }
+
+    .sidenav{
       display: inherit;
     }
   }
