@@ -1,10 +1,10 @@
 <template lang="html">
   <div class="footer">
-    <div class="">
+    <div class="contacto">
       <h2>Contacto</h2>
-      <p><strong>Dirección:</strong> Anillo Periférico Norte, Tablaje Cat. 13615, Colonia Chuburná Hidalgo Inn, Mérida Yucatán.</p>
-      <p><strong>Teléfono:</strong> (999) 942 31 40 al 49</p>
-      <p><strong>Correo:</strong> matemati@www.uady.mx</p>
+      <p><strong>Dirección:</strong> <br> Anillo Periférico Norte, Tablaje Cat. 13615, Colonia Chuburná Hidalgo Inn, Mérida Yucatán.</p>
+      <p><strong>Teléfono:</strong> <br> (999) 942 31 40 al 49</p>
+      <p><strong>Correo:</strong> <br> matemati@www.uady.mx</p>
     </div>
     <div class="legal">
       <h2>Legal</h2>
@@ -58,8 +58,18 @@ export default {
     padding-top: 3px;
   }
 
+  .contacto{
+    width: 100%;
+    text-align: justify;
+}
+  .legal{
+    width: 100%;
+    text-align: justify;
+}
+
   @media only screen and (min-width: 150px) {
     .footer{
+      height: 50%;
       padding: 8px 16px 25px 16px;
       grid-template-columns: 1fr;
       grid-template-rows: auto auto;
@@ -73,16 +83,20 @@ export default {
   @media only screen and (min-width: 640px) {
     .footer{
       padding: 8px 115px 25px 115px;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 115px;
     }
-
     .legal{
       display: none;
     }
   }
 
   @media only screen and (min-width: 1000px) {
+    .footer{
+      padding: 8px 115px 25px 115px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 115px;
+    }
     .legal{
       display: inherit;
     }
