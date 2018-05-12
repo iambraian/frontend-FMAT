@@ -9,9 +9,9 @@
       </div>
       <div class="nav">
         <router-link to="/historia" class="nav-item"> <h5>¿Quienes Somos?</h5> </router-link>
-        <a href="#" class="nav-item"> <h5>Organización</h5> </a>
+        <router-link to="/organizacion" class="nav-item"> <h5>Organización</h5> </router-link>
         <router-link to="/directorio" class="nav-item"> <h5>Directorio</h5> </router-link>
-        <a href="#" class="nav-item"> <h5>Académicos</h5> </a>
+        <router-link to="/academicos" class="nav-item"> <h5>Académicos</h5> </router-link>
       </div>
     </div>
   </div>
