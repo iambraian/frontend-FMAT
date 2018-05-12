@@ -82,4 +82,14 @@ export default {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 61px;
 }
+
+@media only screen and (min-width: 150px){
+
+}
+@media only screen and (min-width: 640px){
+
+}
+@media only screen and (min-width: 1000px){
+
+}
 </style>
