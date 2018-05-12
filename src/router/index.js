@@ -6,6 +6,8 @@ import Phonebook from '@/components/Phonebook'
 import News from '@/components/News'
 import Organization from '@/components/Organization'
 import Academics from '@/components/Academics'
+import Announcements from '@/components/Announcements'
+
 Vue.use(Router)
 
 export default new Router({
@@ -34,6 +36,11 @@ export default new Router({
       path: '/directorio',
       name: 'Phonebook',
       component: Phonebook
+    },
+    {
+      path: '/convocatorias',
+      name: 'Announcements',
+      component: Announcements
     },
     {
       path: '/academicos',
