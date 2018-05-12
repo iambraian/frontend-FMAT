@@ -2,7 +2,7 @@
   <div>
     <fmat-header></fmat-header>
 
-    <div class="body">
+    <div class="internal-body">
       <div class="sidenav">
         <div class="sideblock">
           <h3>¿Quiénes somos?</h3>
@@ -90,46 +90,5 @@ export default {
 </script>
 
 <style lang="css" scoped>
-
-  .sidenav {
-      justify-self: stretch;
-      align-self: stretch;
-      background-color: #0D116E;
-  }
-
-  .sideblock {
-    width: 228px;
-    position: absolute;
-    top: 320px;
-    background: #eee;
-    overflow-x: hidden;
-    padding-top: 8px;
-  }
-
-  .sideblock h3 {
-    text-align: center;
-  }
-
-  .sideblock p {
-    border: solid;
-    border-width: 1px 0px 0px 0px;
-    background-color: #eee;
-    padding: 20px;
-    margin-bottom: 0;
-  }
-
-  .sideblock a {
-    text-decoration: none;
-    font-size: 25px;
-    color: #2196F3;
-  }
-
-  .sideblock #lastSideMenu {
-    border-width: 1px 0px 1px 0px;
-  }
-
-  .sideblock a:hover {
-      color: #064579;
-  }
 
 </style>
