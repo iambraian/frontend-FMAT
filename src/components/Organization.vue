@@ -78,6 +78,6 @@ export default {
 <style lang="css" scoped>
 
   img {
-    align: center;
+    width: 100%;
   }
 </style>
