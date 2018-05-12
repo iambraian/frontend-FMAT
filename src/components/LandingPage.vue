@@ -6,6 +6,7 @@
     </div>
     <div class="news-section">
       <h1 class="section-header">Noticias</h1>
+      <p class="section-more" @click="scrollMeToTop()"><router-link to="/noticias">VER MÁS NOTICIAS »</router-link></p>
       <div class="showcase">
         <landing-news></landing-news>
         <landing-news></landing-news>
@@ -14,6 +15,7 @@
     </div>
     <div class="announcements-section">
       <h1 class="section-header">Convocatorias</h1>
+      <p class="section-more" @click="scrollMeToTop()"><router-link to="/noticias">VER MÁS CONVOCATORIAS »</router-link></p>
       <div class="showcase">
         <landing-announcements></landing-announcements>
         <landing-announcements></landing-announcements>
@@ -39,6 +41,12 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  methods: {
+    scrollMeToTop() {
+
+      window.scrollTo(0,0);
+    }
   }
 }
 </script>
@@ -56,6 +64,12 @@ export default {
 .section-header{
   font-size: 48px;
   margin-bottom: 24px;
+}
+
+.section-more{
+  position: absolute;
+  right: 112px;
+  margin-top: -60px;
 }
 
 .news-section{
