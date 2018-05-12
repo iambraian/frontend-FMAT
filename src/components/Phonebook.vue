@@ -5,7 +5,7 @@
       <div class="sidebar"></div>
 
       <div class="content">
-        <h1 class="phonebook-header"> <strong>Directorio</strong> </h1>
+        <h1 class="page-header"> <strong>Directorio</strong> </h1>
         <span class="search"><i class="material-icons">search</i></span>
         <input class="phonebook-search" v-model="search" type="text" placeholder="Buscar por Nombre">
 
@@ -112,26 +112,6 @@ export default {
 </script>
 
 <style lang="css" scoped>
-
-  .body{
-    display:grid;
-  }
-
-  .content{
-    padding: 44px 16px 16px 16px;
-  }
-
-  .sidebar{
-    justify-self: stretch;
-    align-self: stretch;
-    background-color: #0D116E;
-  }
-
-  .phonebook-header{
-    font-size: 30px;
-    margin-bottom: 36px;
-  }
-
   .phonebook-section{
     display: grid;
     grid-row-gap: 16px;
@@ -165,18 +145,6 @@ export default {
       grid-template-columns: 1fr;
       grid-column-gap: 0px;
     }
-
-    .phonebook-header{
-      margin-left: 0px;
-    }
-
-    .body{
-      grid-template-columns: 1fr;
-    }
-
-    .sidebar{
-      display: none;
-    }
   }
 
   @media only screen and (min-width: 640px) {
@@ -187,18 +155,6 @@ export default {
     .phonebook-section{
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 16px;
-    }
-
-    .phonebook-header{
-      margin-left: 91px;
-    }
-
-    .body{
-      grid-template-columns: 114px 1fr 114px;
-    }
-
-    .sidebar{
-      display: inherit;
     }
   }
 

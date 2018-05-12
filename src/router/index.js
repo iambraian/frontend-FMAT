@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import LandingPage from '@/components/LandingPage'
 import AboutUs from '@/components/AboutUs'
 import Phonebook from '@/components/Phonebook'
+import News from '@/components/News'
 
 Vue.use(Router)
 
@@ -17,6 +18,11 @@ export default new Router({
       path: '/historia',
       name: 'AboutUs',
       component: AboutUs
+    },
+    {
+      path: '/noticias',
+      name: 'News',
+      component: News
     },
     {
       path: '/directorio',
