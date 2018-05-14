@@ -60,17 +60,6 @@ export default {
   height: 100%;
 }
 
-.section-header{
-  font-size: 48px;
-  margin-bottom: 24px;
-}
-
-.section-more{
-  position: absolute;
-  right: 112px;
-  margin-top: -60px;
-}
-
 .news-section{
   text-align: center;
   background-color: #F3F3F3;
@@ -97,12 +86,49 @@ export default {
 }
 
 @media only screen and (min-width: 150px){
+  .news-section {
+    padding: 24px 24px 80px 24px;
+  }
 
+  .announcements-section  {
+    padding: 24px 24px 80px 24px;
+  }
+  .news-section .showcase{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 32px;
+  }
+  .section-header{
+    margin-bottom: 8px;
+  }
+  .section-more{
+    margin: 0px;
+    position: static;
+    padding-bottom: 24px;
+  }
 }
 @media only screen and (min-width: 640px){
-
+  .news-section .showcase{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 56px;
+  }
 }
 @media only screen and (min-width: 1000px){
-
+  .news-section .showcase{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 56px;
+  }
+  .section-header{
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+  .section-more{
+    position: absolute;
+    right: 112px;
+    margin-top: -60px;
+    padding: 0px;
+  }
 }
 </style>
