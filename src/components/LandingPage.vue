@@ -73,23 +73,10 @@ export default {
   padding: 24px 112px 80px 112px;
 }
 
-.news-section .showcase{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 56px;
-}
-
-.announcements-section .showcase{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 61px;
-}
-
 @media only screen and (min-width: 150px){
   .news-section {
     padding: 24px 24px 80px 24px;
   }
-
   .announcements-section  {
     padding: 24px 24px 80px 24px;
   }
@@ -106,19 +93,36 @@ export default {
     position: static;
     padding-bottom: 24px;
   }
+  .announcements-section .showcase{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 61px;
+  }
 }
+
 @media only screen and (min-width: 640px){
   .news-section .showcase{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 56px;
   }
+  .announcements-section .showcase{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 61px;
+  }
 }
+
 @media only screen and (min-width: 1000px){
   .news-section .showcase{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 56px;
+  }
+  .announcements-section .showcase{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 61px;
   }
   .section-header{
     font-size: 48px;
