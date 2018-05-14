@@ -17,9 +17,9 @@
       <h1 class="section-header">Convocatorias</h1>
       <p class="section-more" @click="scrollMeToTop()"><router-link to="/noticias">VER MÁS CONVOCATORIAS »</router-link></p>
       <div class="showcase">
-        <landing-announcements></landing-announcements>
-        <landing-announcements></landing-announcements>
-        <landing-announcements></landing-announcements>
+        <a href="#"><landing-announcements></landing-announcements></a>
+        <a href="#"><landing-announcements></landing-announcements></a>
+        <a href="#"><landing-announcements></landing-announcements></a>
       </div>
     </div>
     <fmat-footer></fmat-footer>
@@ -43,9 +43,8 @@ export default {
     }
   },
   methods: {
-    scrollMeToTop() {
-
-      window.scrollTo(0,0);
+    scrollMeToTop () {
+      window.scrollTo(0, 0)
     }
   }
 }
