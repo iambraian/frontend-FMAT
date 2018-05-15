@@ -154,21 +154,21 @@
 
         <h1 id="formatos">Formatos para el personal</h1>
         <ul>
-          <li><a href="/files/reuniones/enero2018/Presentación-Reunión-Inicio-Semestre-Enero-Mayo-2018.pdf">Presentación de la reunión de trabajo de inicio del semestre Enero - Mayo 2018</a></li>
-          <li><a href="/files/calendarios/escolar/2018/Calendario-ene-jul-2018-MEyA.pdf">Calendario Escolar MEyA Enero - Julio 2018</a></li>
-          <li><a href="/files/calendarios/escolar/2018/Calendario-ene-julio-2018-MEFI.pdf">Calendario Escolar MEFI Enero - Julio 2018</a></li>
-          <li><a href="/files/documents/reuniones/enero2018/Formato_de_Plan_de_Trabajo_de_Actividades_Academicas_Enero_-_Julio_2018.docx">Formato de Plan de Trabajo Enero - Julio 2018</a></li>
-          <li><a href="/directorio">Directorio FMAT 2017</a></li>
-          <li><a href="/files/documents/formatos/compras/F-FMAT-SAD-01_FORMATO_SOLICITUD_DE_COTIZACION_O_COMPRA.zip">Formato de solicitud de compras</a></li>
+          <li><a href="http://www.matematicas.uady.mx/files/reuniones/enero2018/Presentación-Reunión-Inicio-Semestre-Enero-Mayo-2018.pdf">Presentación de la reunión de trabajo de inicio del semestre Enero - Mayo 2018</a></li>
+          <li><a href="http://www.matematicas.uady.mx/files/calendarios/escolar/2018/Calendario-ene-jul-2018-MEyA.pdf">Calendario Escolar MEyA Enero - Julio 2018</a></li>
+          <li><a href="http://www.matematicas.uady.mx/files/calendarios/escolar/2018/Calendario-ene-julio-2018-MEFI.pdf">Calendario Escolar MEFI Enero - Julio 2018</a></li>
+          <li><a href="http://www.matematicas.uady.mx/files/documents/reuniones/enero2018/Formato_de_Plan_de_Trabajo_de_Actividades_Academicas_Enero_-_Julio_2018.docx">Formato de Plan de Trabajo Enero - Julio 2018</a></li>
+          <li @click="scrollMeToTop()"><router-link to="/directorio">Directorio FMAT 2017</router-link></li>
+          <li><a href="http://www.matematicas.uady.mx/files/documents/formatos/compras/F-FMAT-SAD-01_FORMATO_SOLICITUD_DE_COTIZACION_O_COMPRA.zip">Formato de solicitud de compras</a></li>
           <li><a href="https://intranet.matematicas.uady.mx/encuestas/index.php?sid=52627&amp;lang=es627&amp;lang=es">Evaluación de Compras</a></li>
-          <li><a href="/files/documents/formatos/salidas-academicas/Formatos_de_Salidas_Academicas.zip">Formato de salidas académicas</a></li>
-          <li><a href="/files/documents/reuniones/enero2018/Formato-Horario-Enero-Julio-2018.docx">Formato de horarios de los profesores</a></li>
-          <li><a href="/files/documents/reuniones/agosto2016/calendario-2016.pdf">Calendario de Mantenimientos de Equipo de Cómputo</a></li>
+          <li><a href="http://www.matematicas.uady.mx/files/documents/formatos/salidas-academicas/Formatos_de_Salidas_Academicas.zip">Formato de salidas académicas</a></li>
+          <li><a href="http://www.matematicas.uady.mx/files/documents/reuniones/enero2018/Formato-Horario-Enero-Julio-2018.docx">Formato de horarios de los profesores</a></li>
+          <li><a href="http://www.matematicas.uady.mx/files/documents/reuniones/agosto2016/calendario-2016.pdf">Calendario de Mantenimientos de Equipo de Cómputo</a></li>
         </ul>
 
         <h1 id="apoyo">Apoyo Secretarial</h1>
         <ul>
-          <li><a href="/files/documents/reuniones/agosto2014/2014_2-Asignacion-de-secretarias.pdf" class="enlace">Asignación para secretarias</a></li>
+          <li><a href="http://www.matematicas.uady.mx/files/documents/reuniones/agosto2014/2014_2-Asignacion-de-secretarias.pdf" class="enlace">Asignación para secretarias</a></li>
         </ul>
 
       </div>
@@ -190,6 +190,11 @@ export default {
   data () {
     return {
 
+    }
+  },
+  methods: {
+    scrollMeToTop () {
+      window.scrollTo(0, 0)
     }
   }
 }
