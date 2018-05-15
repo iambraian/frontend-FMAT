@@ -128,6 +128,10 @@ export default {
     padding: 24px 112px 80px 112px;
   }
 
+  .section-more a{
+    color: inherit;
+  }
+
   @media only screen and (min-width: 150px){
     .announcements-section .showcase{
       grid-template-columns: repeat(1, 1fr);
