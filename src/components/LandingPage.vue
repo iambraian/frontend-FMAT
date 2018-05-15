@@ -62,6 +62,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+  .showcase{
+    display: grid;
+    grid-row-gap: 32px;
+  }
+
   .slider-main{
     position: relative;
     text-align: center;
@@ -124,18 +129,22 @@ export default {
   }
 
   @media only screen and (min-width: 150px){
+    .announcements-section .showcase{
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 61px;
+    }
+
+    .news-section .showcase{
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 32px;
+    }
+
     .news-section {
       padding: 24px 24px 80px 24px;
     }
 
     .announcements-section  {
       padding: 24px 24px 80px 24px;
-    }
-
-    .news-section .showcase{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-column-gap: 32px;
     }
 
     .section-header{
@@ -146,12 +155,6 @@ export default {
       margin: 0px;
       position: static;
       padding-bottom: 24px;
-    }
-
-    .announcements-section .showcase{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-column-gap: 61px;
     }
 
     .slider-wrapper{
@@ -178,13 +181,11 @@ export default {
 
   @media only screen and (min-width: 640px){
     .news-section .showcase{
-      display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 56px;
     }
 
     .announcements-section .showcase{
-      display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 61px;
     }
@@ -214,13 +215,11 @@ export default {
 
   @media only screen and (min-width: 1000px){
     .news-section .showcase{
-      display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 56px;
     }
 
     .announcements-section .showcase{
-      display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 61px;
     }
