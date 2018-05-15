@@ -12,7 +12,7 @@
         </div>
       </div>
 
-      <div class="content">
+      <div class="content limited">
         <h1 id="historia">Historia</h1>
         <p>En el mes de septiembre de 1960 se celebró en Yucatán el IV Congreso de la Sociedad Matemática Mexicana, después del cual se reunieron maestros de Matemáticas y Física de la Escuela Preparatoria y de la Facultad de Ingeniería de Universidad de Yucatán para elaborar un plan, cuyo objetivo sería la creación de un Departamento de Estudios Físicos-Matemáticos para promover el interés de estas ciencias y difundirlas, así como la preparación de los maestros encargados de impartirlas.</p>
         <p>El acta de constitución del departamento de Estudios Físico-Matemáticos, así como sus reglamentos, es de fecha 26 de octubre de 1960; sin embargo fué hasta el 6 de febrero de 1962, que el Consejo Universitario lo reconoció oficialmente, cambiándole el nombre por Centro de Estudios Físico-Matemáticos, el cual se inauguró el 24 de septiembre de 1962.</p>

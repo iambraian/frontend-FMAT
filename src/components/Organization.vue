@@ -13,7 +13,7 @@
         </div>
       </div>
 
-      <div class="content">
+      <div class="content limited">
 
         <h1 id="organigrama">Organigrama</h1>
         <img src="../assets/organigrama-FMAT-2018.jpg" alt="">

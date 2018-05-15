@@ -13,7 +13,7 @@
         </div>
       </div>
 
-      <div class="content">
+      <div class="content limited">
 
         <h1 id="cuerpos">Cuerpos Académicos</h1>
 

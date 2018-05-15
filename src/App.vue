@@ -44,10 +44,12 @@ export default {
 
   .internal-body{
     display: grid;
+    background-color: #0D116E;
   }
 
   .content{
     padding: 44px 16px 16px 16px;
+    background-color: #F1F1F1;
   }
 
   .sidebar{
@@ -116,6 +118,10 @@ export default {
       grid-template-columns: 1fr;
     }
 
+    .limited{
+      width: 100%;
+    }
+
     .sidebar{
       display: none;
     }
@@ -137,6 +143,10 @@ export default {
 
     .internal-body{
       grid-template-columns: 228px 1fr;
+    }
+
+    .limited{
+      width: 90%;
     }
 
     .sidebar{
