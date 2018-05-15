@@ -59,8 +59,4 @@ export default {
   .label{
     font-size: 14px;
   }
-
-  .underline a{
-    color: #0000EE;
-  }
 </style>

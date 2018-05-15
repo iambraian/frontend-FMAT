@@ -29,6 +29,11 @@ export default {
     color: inherit;
   }
 
+  p a, li a{
+    text-decoration: inherit;
+    color: #2196F3;
+  }
+
   body{
     margin: 0;
   }
