@@ -59,8 +59,8 @@ export default {
 
   .sideblock {
     width: 228px;
-    position: absolute;
-    top: 320px;
+    position: fixed;
+    top: 220px;
     background: #eee;
     overflow-x: hidden;
     padding-top: 8px;
@@ -74,7 +74,7 @@ export default {
     border: solid;
     border-width: 1px 0px 0px 0px;
     background-color: #eee;
-    padding: 20px;
+    padding: 5px;
     margin-bottom: 0;
   }
 

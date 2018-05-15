@@ -1,8 +1,17 @@
 <template>
   <div>
     <fmat-header></fmat-header>
-    <div class="slider">
+    <div class="slider-main">
       <img class="news-image" src="../assets/MainNews.png" alt="">
+      <div class="slider-wrapper">
+        <div class="slider-content">
+          <div class="slider-box">
+            <h3>Bill Gates recomienda la Facultad de Matemáticas</h3>
+            <p>El fundador de Microsoft visita el campus</p>
+            <a href="#" class="read-more">Leer Más</a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="news-section">
       <h1 class="section-header">Noticias</h1>
@@ -52,87 +61,126 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.slider{
-}
 
-.news-image{
-  width:100%;
-  height: 100%;
-}
+  .slider-main{
+    position: relative;
+    text-align: center;
+  }
 
-.news-section{
-  text-align: center;
-  background-color: #F3F3F3;
-  padding: 24px 112px 80px 112px;
-}
-
-.announcements-section{
-  text-align: center;
-  background-color: #0D116E;
-  color: #F3F3F3;
-  padding: 24px 112px 80px 112px;
-}
-
-@media only screen and (min-width: 150px){
-  .news-section {
-    padding: 24px 24px 80px 24px;
-  }
-  .announcements-section  {
-    padding: 24px 24px 80px 24px;
-  }
-  .news-section .showcase{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 32px;
-  }
-  .section-header{
-    margin-bottom: 8px;
-  }
-  .section-more{
-    margin: 0px;
-    position: static;
-    padding-bottom: 24px;
-  }
-  .announcements-section .showcase{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 61px;
-  }
-}
-
-@media only screen and (min-width: 640px){
-  .news-section .showcase{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 56px;
-  }
-  .announcements-section .showcase{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 61px;
-  }
-}
-
-@media only screen and (min-width: 1000px){
-  .news-section .showcase{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 56px;
-  }
-  .announcements-section .showcase{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 61px;
-  }
-  .section-header{
-    font-size: 48px;
-    margin-bottom: 24px;
-  }
-  .section-more{
+  .slider-wrapper{
     position: absolute;
-    right: 112px;
-    margin-top: -60px;
-    padding: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
   }
-}
+
+  .slider-content {
+    z-index: 2;
+    opacity: 0.9;
+    overflow: hidden;
+    background: rgba(15, 38, 60, 0.75) none repeat scroll 0% 0%;
+    width: 100%;
+  }
+
+  .slider-box {
+    margin: 0 30px 0 30px;
+    padding: 35px;
+    color: white;
+    margin: 0 20px 0;
+  }
+
+  .read-more{
+    width: 100px;
+    height: 54px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    font-family: inherit;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding-top: 12px;
+    text-transform: uppercase;
+  }
+
+  .news-image{
+    width:100%;
+    height: 100%;
+  }
+
+  .news-section{
+    text-align: center;
+    background-color: #F3F3F3;
+    padding: 24px 112px 80px 112px;
+  }
+
+  .announcements-section{
+    text-align: center;
+    background-color: #0D116E;
+    color: #F3F3F3;
+    padding: 24px 112px 80px 112px;
+  }
+
+  @media only screen and (min-width: 150px){
+    .news-section {
+      padding: 24px 24px 80px 24px;
+    }
+    .announcements-section  {
+      padding: 24px 24px 80px 24px;
+    }
+    .news-section .showcase{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 32px;
+    }
+    .section-header{
+      margin-bottom: 8px;
+    }
+    .section-more{
+      margin: 0px;
+      position: static;
+      padding-bottom: 24px;
+    }
+    .announcements-section .showcase{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 61px;
+    }
+  }
+
+  @media only screen and (min-width: 640px){
+    .news-section .showcase{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 56px;
+    }
+    .announcements-section .showcase{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 61px;
+    }
+  }
+
+  @media only screen and (min-width: 1000px){
+    .news-section .showcase{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 56px;
+    }
+    .announcements-section .showcase{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 61px;
+    }
+    .section-header{
+      font-size: 48px;
+      margin-bottom: 24px;
+    }
+    .section-more{
+      position: absolute;
+      right: 112px;
+      margin-top: -60px;
+      padding: 0px;
+    }
+  }
 </style>
