@@ -6,8 +6,11 @@
 
       <div class="content">
         <h1 class="page-header"> <strong>Directorio</strong> </h1>
-        <span class="search"><i class="material-icons">search</i></span>
-        <input class="phonebook-search" v-model="search" type="text" placeholder="Buscar por Nombre">
+
+        <form>
+          <span class="search"><i class="material-icons">search</i></span>
+          <input class="form-control phonebook-search input-lg" v-model="search" type="text" placeholder="Buscar por Nombre">
+        </form>
 
         <h2 class="section-header">Autoridades</h2>
         <div class="phonebook-section">
@@ -130,8 +133,6 @@ export default {
   .phonebook-search{
     width: 100%;
     background: #F9F9F9;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
     padding: 8px 8px 8px 8px;
   }
