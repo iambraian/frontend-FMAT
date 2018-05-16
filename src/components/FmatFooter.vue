@@ -31,6 +31,7 @@ export default {
 
 <style lang="css" scoped>
   .footer{
+    z-index: 2;
     display: grid;
     color: #F3F3F3;
     background: #082133;
@@ -74,6 +75,7 @@ export default {
       grid-template-columns: 1fr;
       grid-template-rows: auto auto;
       grid-column-gap: 115px;
+      position: inherit;
     }
     .legal{
       display: none;
@@ -85,6 +87,7 @@ export default {
       padding: 8px 115px 25px 115px;
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 115px;
+      position: absolute;
     }
     .legal{
       display: none;
@@ -96,6 +99,7 @@ export default {
       padding: 8px 115px 25px 115px;
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 115px;
+      position: absolute;
     }
     .legal{
       display: inherit;
