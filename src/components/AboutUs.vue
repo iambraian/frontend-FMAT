@@ -212,9 +212,9 @@ export default {
     position: absolute;
     width: 25px;
     height: 25px;
-    right: -17px;
+    right: -13px;
     background-color: white;
-    border: 4px solid #FF9F55;
+    border: 4px solid #EAC657;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -260,7 +260,7 @@ export default {
 
 /* Fix the circle for containers on the right side */
 .right::after {
-    left: -16px;
+    left: -12px;
 }
 
 /* The actual content */
@@ -275,7 +275,7 @@ export default {
 @media screen and (max-width: 600px) {
   /* Place the timelime to the left */
   .timeline::after {
-    left: 31px;
+    left: 27px;
   }
 
   /* Full-width containers */
