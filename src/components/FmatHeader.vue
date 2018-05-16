@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="header">
-    <router-link to="/" class="logo"> <img src="../assets/Arrengement.png" alt="logo"> </router-link>
+    <router-link to="/" class="logo"> <img src="../assets/banner.png" alt="logo"> </router-link>
     <div class="top-bar">
       <div class="edu-links">
         <a href="https://es.uadyvirtual.uady.mx/"><img src="../assets/uadyvirtual.png" alt="logo"></a>
@@ -29,16 +29,16 @@ export default {
 </script>
 
 <style lang="css" scoped>
-
   .header{
     display: grid;
     font-size: 24px;
     position: relative;
+    margin-bottom: 80px;
   }
 
   .logo{
     z-index: 20;
-    width: 220px;
+    width: 302px; /*220*/
   }
 
   .top-bar{
@@ -80,8 +80,8 @@ export default {
     line-height: normal;
   }
 
-  .navbar:last-child{
-    border-right: 0px solid black;
+  .navbar:first-child{
+    border-left: 0px solid black;
   }
 
   a:visited{
