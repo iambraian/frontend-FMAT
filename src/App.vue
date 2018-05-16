@@ -49,7 +49,7 @@ export default {
 
   .content{
     padding: 44px 16px 16px 16px;
-    background-color: #F1F1F1;
+    background-color: #f5f5f5;
   }
 
   .sidebar{
