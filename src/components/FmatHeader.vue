@@ -81,25 +81,21 @@ export default {
     line-height: normal;
   }
 
-  a:visited{
-    color: inherit;
-  }
+  a:visited{ color: inherit; }
 
   @media only screen and (min-width: 150px) {
-    .nav-item h5{
-      margin-top: 20px;
-    }
+
+    .nav-item h5{ margin-top: 20px; }
+
     .header{
       top: 0px;
       margin: 0px 0px 0px;
       grid-template-columns: 1fr;
     }
-    .edu-links{
-      justify-self: center;
-    }
-    .logo{
-      display: none;
-    }
+    .edu-links{ justify-self: center; }
+
+    .logo{ display: none; }
+
     .nav{
       font-size: 16px;
       overflow: hidden;
@@ -107,23 +103,17 @@ export default {
   }
 
   @media only screen and (min-width: 640px) {
-    .nav-item h5{
-      margin-top: 0.56em;
-    }
-    .header{
-      grid-template-columns: auto 1fr;
-    }
-    .logo{
-      display: inherit;
-    }
-    .edu-links{
-      justify-self: end;
-    }
-    .nav{
-      font-size: inherit;
-    }
-    .van .icon {
-    display: none;
-    }
+
+    .nav-item h5{ margin-top: 0.56em; }
+
+    .header{ grid-template-columns: auto 1fr; }
+
+    .logo{ display: inherit; }
+
+    .edu-links{ justify-self: end; }
+
+    .nav{ font-size: inherit; }
+
+    .van .icon { display: none; }
   }
 </style>

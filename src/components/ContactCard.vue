@@ -56,7 +56,5 @@ export default {
     padding: 0px 10px 0px 10px;
   }
 
-  .label{
-    font-size: 14px;
-  }
+  .label{ font-size: 14px; }
 </style>

@@ -138,9 +138,7 @@ export default {
   }
 
   @media only screen and (min-width: 150px) {
-    .search{
-      right: 20px;
-    }
+    .search{ right: 20px; }
 
     .phonebook-section{
       grid-template-columns: 1fr;
@@ -149,9 +147,7 @@ export default {
   }
 
   @media only screen and (min-width: 640px) {
-    .search{
-      right: 137px;
-    }
+    .search{ right: 137px; }
 
     .phonebook-section{
       grid-template-columns: repeat(2, 1fr);

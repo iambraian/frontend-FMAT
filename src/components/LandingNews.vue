@@ -41,8 +41,7 @@ export default {
   }
 
   @media only screen and (min-width: 150px){
-    .news-item{
-      padding-bottom: 48px;
-    }
+
+    .news-item{ padding-bottom: 48px; }
   }
 </style>

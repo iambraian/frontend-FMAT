@@ -221,14 +221,10 @@ export default {
 }
 
 /* Place the container to the left */
-.left {
-    left: 0;
-}
+.left { left: 0; }
 
 /* Place the container to the right */
-.right {
-    left: 50%;
-}
+.right { left: 50%; }
 
 /* Add arrows to the left container (pointing right) */
 .left::before {
@@ -259,9 +255,7 @@ export default {
 }
 
 /* Fix the circle for containers on the right side */
-.right::after {
-    left: -12px;
-}
+.right::after { left: -12px; }
 
 /* The actual content */
 .tl-content {
@@ -275,9 +269,7 @@ export default {
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
   /* Place the timelime to the left */
-  .timeline::after {
-    left: 27px;
-  }
+  .timeline::after { left: 27px; }
 
   /* Full-width containers */
   .tl-container {
@@ -295,14 +287,10 @@ export default {
   }
 
   /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-    left: 15px;
-  }
+  .left::after, .right::after { left: 15px; }
 
   /* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
-  }
+  .right { left: 0%; }
 }
 
 </style>

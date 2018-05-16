@@ -42,8 +42,5 @@ export default {
 </script>
 
 <style lang="css" scoped>
-
-  .news-area{
-    margin-top: 48px;
-  }
+  .news-area{ margin-top: 48px; }
 </style>

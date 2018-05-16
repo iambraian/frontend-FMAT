@@ -42,8 +42,5 @@ export default {
 </script>
 
 <style lang="css" scoped>
-
-  .announcements-area{
-    margin-top: 48px;
-  }
+  .announcements-area{ margin-top: 48px; }
 </style>

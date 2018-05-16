@@ -25,9 +25,7 @@ export default {
     margin-bottom: 48px;
   }
 
-  .news-title{
-    font-size: 30px;
-  }
+  .news-title{ font-size: 30px; }
 
   @media only screen and (min-width: 150px) {
 
@@ -40,9 +38,7 @@ export default {
       border-bottom: 2px solid #000000;
     }
 
-    .news-image{
-      width: 100%;
-    }
+    .news-image{ width: 100%; }
   }
 
   @media only screen and (min-width: 640px) {
@@ -56,8 +52,6 @@ export default {
       border-bottom: 0px solid #000000;
     }
 
-    .news-image{
-      width: auto;
-    }
+    .news-image{ width: auto; }
   }
 </style>

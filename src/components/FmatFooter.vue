@@ -77,9 +77,8 @@ export default {
       grid-column-gap: 115px;
       position: inherit;
     }
-    .legal{
-      display: none;
-    }
+
+    .legal{ display: none; }
   }
 
   @media only screen and (min-width: 640px) {
@@ -89,9 +88,8 @@ export default {
       grid-column-gap: 115px;
       position: absolute;
     }
-    .legal{
-      display: none;
-    }
+    
+    .legal{ display: none; }
   }
 
   @media only screen and (min-width: 1000px) {
@@ -101,8 +99,7 @@ export default {
       grid-column-gap: 115px;
       position: absolute;
     }
-    .legal{
-      display: inherit;
-    }
+
+    .legal{ display: inherit; }
   }
 </style>
