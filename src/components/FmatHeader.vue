@@ -39,6 +39,7 @@ export default {
   .logo{
     z-index: 20;
     width: 302px; /*220*/
+    height: 165px;
   }
 
   .top-bar{
@@ -110,8 +111,6 @@ export default {
       margin-top: 0.56em;
     }
     .header{
-      top: 144px;
-      margin-top: -144px;
       grid-template-columns: auto 1fr;
     }
     .logo{
