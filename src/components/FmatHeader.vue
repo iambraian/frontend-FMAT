@@ -5,7 +5,6 @@
       <div class="edu-links">
         <a href="https://es.uadyvirtual.uady.mx/"><img src="../assets/uadyvirtual.png" alt="logo"></a>
         <a href="https://intranet.matematicas.uady.mx/enlinea2/"><img src="../assets/enlinea2.png" alt="logo"></a>
-        <a href="https://intranet.matematicas.uady.mx/enlinea/"><img src="../assets/enlinea1.png" alt="logo"></a>
       </div>
       <div class="nav">
         <router-link to="/historia" class="nav-item"> <h5>¿Quienes Somos?</h5> </router-link>
@@ -52,7 +51,7 @@ export default {
 
   .edu-links{
     display: grid;
-    grid-template-columns: repeat(3, 98px);
+    grid-template-columns: repeat(2, 98px);
     grid-column-gap: 8px;
     justify-items: center;
     align-items: center;
@@ -65,11 +64,11 @@ export default {
     justify-items: stretch;
     align-items: center;
     text-align: center;
-    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
   }
 
   .nav-item{
-    border-right: 1px solid black;
+    border-left: 1px solid #B89B44;
     height: 80px;
     line-height: 80px;
     text-align: center;
@@ -79,10 +78,6 @@ export default {
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
-  }
-
-  .navbar:first-child{
-    border-left: 0px solid black;
   }
 
   a:visited{
@@ -95,7 +90,7 @@ export default {
     }
     .header{
       top: 0px;
-      margin-top: 0px;
+      margin: 0px 0px 0px;
       grid-template-columns: 1fr;
     }
     .edu-links{
@@ -106,6 +101,7 @@ export default {
     }
     .nav{
       font-size: 16px;
+      overflow: hidden;
     }
   }
 
@@ -126,6 +122,9 @@ export default {
     }
     .nav{
       font-size: inherit;
+    }
+    .van .icon {
+    display: none;
     }
   }
 </style>

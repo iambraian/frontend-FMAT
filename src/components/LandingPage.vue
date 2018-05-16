@@ -111,8 +111,8 @@ export default {
   }
 
   .news-image{
-    width:100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
   }
 
   .news-section{
@@ -137,16 +137,17 @@ export default {
       grid-template-columns: repeat(1, 1fr);
       grid-column-gap: 61px;
     }
-
     .news-section .showcase{
       grid-template-columns: repeat(1, 1fr);
       grid-column-gap: 32px;
     }
-
+    .news-image {
+      max-width: 100%;
+      height: auto;
+    }
     .news-section {
       padding: 24px 24px 80px 24px;
     }
-
     .announcements-section  {
       padding: 24px 24px 80px 24px;
     }
@@ -154,7 +155,6 @@ export default {
     .section-header{
       margin-bottom: 8px;
     }
-
     .section-more{
       margin: 0px;
       position: static;
@@ -165,19 +165,15 @@ export default {
       top: 0;
       left: 0;
     }
-
     .slider-content {
       width: 100%;
     }
-
     .slider-box{
-      padding: 35px;
+      padding: 16px 0px;
     }
-
     .slider-box h3{
       margin-bottom: .7rem;
     }
-
     .slider-box p{
       margin-bottom: 1.5rem;
     }
