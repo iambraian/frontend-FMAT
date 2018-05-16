@@ -30,6 +30,7 @@ export default {
 
 <style lang="css" scoped>
   .header{
+    z-index: 5;
     display: grid;
     font-size: 24px;
     position: relative;
